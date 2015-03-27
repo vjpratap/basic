@@ -1,0 +1,176 @@
+Scenario 1:- wc should come in form of line, words and then chars in the file
+		wc one.txt
+			2		10		48 one.txt
+
+Scenario 2:- wc should give 2 and filename when the number of lines are 2 in the file
+		wc -l one.txt  OR wc --lines one.txt
+		   2 one.txt
+
+Scenario 3:- wc should give 2 and filename when the number of lines are 2 in the file and doesn't matter how many times we call the l or lines flags
+		wc -l -l -l -l one.txt OR wc --lines -l -l --lines
+		   2 one.txt
+
+Scenario 4:- wc should give 10 and filename when the number of words are 10 in the file
+		wc -w one.txt OR wc --words one.txt
+		   10 one.txt
+
+Scenario 5:- wc should give 10 and filename when the number of words are 10 in the file and doesn't matter how many times we call the w or words flag
+		wc -w -w -w -w  one.txt OR wc --words -w --words --words one.txt
+		   10 one.txt
+
+Scenario 6:- wc should give 48 and filename when the number of chars are 48 in the file
+		wc -c one.txt OR wc --bytes one.txt OR wc --chars one.txt
+		   48 one.txt
+
+Scenario 7:- wc should give 48 and filename when the numbers of chars are 48 in the file and doesn't matter how many times we call the c, chars or bytes flag
+		wc -c --chars --chars --bytes OR wc --bytes -c --bytes --chars
+			48 one.txt
+
+Scenario 8:- wc should give 26 and filename when the length of longest line is 26 in the file 
+		wc -L one.txt OR wc --max-line-length
+		   26 one.txt
+
+Scenario 9:- wc should give 26 and filename when the length of longest is line 26 in the file and doesn't matter how many times we call L or max-line-length flag 
+		wc -L -L -L -L -L one.txt OR wc --max-line-length -L --max-line-length --max-line-length -L 
+		   26 one.txt
+
+Scenario 10:- wc should come in the form of that first come by number of lines, number of words, number of chars and then length of longest line in the file
+		wc -w -l -L -c one.txt OR wc -w -l -c -L one.txt OR wc -L -c -w -l one.txt
+			2 	10	 48 	26 one.txt 
+
+Scenario 11:- wc should come in the sequence in the file
+		wc -c -w one.txt OR wc -w -c one.txt
+			10	   48 one.txt
+		wc -l -L one.txt OR wc -L -l one.txt
+			2 		26 one.txt
+		wc -w -l one.txt OR wc -l -w one.txt
+			2 		10 one.txt
+		wc -l -c one.txt OR wc -c -l one.txt
+			2 		48 one.txt
+		wc -c -L one.txt OR wc -L -c one.txt
+			48		26 one.txt
+		wc -w -L one.txt OR wc -L -w one.txt
+			10		26 one.txt
+		wc -w -c -l one.txt OR wc -c -w -l one.txt OR wc -l -w -c one.txt
+			2 		10		48 one.txt
+		wc -L -c -l one.txt OR wc -c -L -l one.txt OR wc -l -c -L one.txt
+			2 		48		26 one.txt
+		wc -w -c -L one.txt OR wc -c -w -L one.txt OR wc -L -w -c one.txt
+			10		48		26 one.txt
+
+Scenario 12:- wc should come in form of line, words and then chars in the file doesn't matter if the same flag given multipul times
+		wc -l -l -c -w -c -L -l -L --chars --words --lines --max-line-length one.txt
+			2		10		48		26 one.txt
+
+Scenario 13:- wc should allow the spaces between two arguments in the file
+		wc -l    -w       one.txt
+			2 		10 one.txt
+
+
+Scenario 14:- wc should come in a form of line words and then chars on standard Scenario
+ 		wc
+		vijay
+		pratap singh
+
+Scenario 15:- wc should give 2 when the number of lines are 2 line on standard Scenario
+		wc -l OR wc --lines
+		vijay 
+		pratap singh
+		      2
+
+Scenario 16:- wc should give 2 when the number of lines are 2 on standard Scenario and does not matter how many times we call l or lines flag
+		wc -l -l --lines --lines -l
+		vijay
+		pratap singh
+			  2
+Scenario 17:- wc should give 3 when the number of words are 3 on standard Scenario
+		wc -w OR wc --words
+		vijay
+		pratap singh
+		      3
+
+Scenario 18:- wc should give 3 when the number of words are 3 on standard Scenario and does not matter how many times we call w or words flag
+		wc -w -w --words --words -w
+			   3
+
+Scenario 19:- wc should give 19 when the number of chars are 19 on standard Scenario
+		wc -c OR wc --chars OR wc --bytes
+		vijay
+		pratap singh
+		     19
+
+Scenario 20:- wc should give 19 when the number of chars are 19 on standard Scenario and does not matter how many times we call c, chars and bytes flag 
+		wc --chars -c -c --bytes --chars --bytes
+		vijay 
+		pratap singh
+			  19
+
+
+Scenario 21:- wc should give 12 when the length of longest line is 12 on standard Scenario
+		wc -L OR wc --max-line-length
+		vijay 
+		pratap singh
+			 12
+
+Scenario 22:- wc should give 12 when the length of longest line is 12 on standard Scenario and does not matter how many times we call L or max-line-length flag
+		wc -L --max-line-length -L -L --max-line-length
+		vijay 
+		pratap singh
+			 12
+
+Scenario 23:- wc should come in the form of that first come by number of lines, number of words, number of chars and then length of longest line on standard Scenario
+		wc -w -l -L -c OR wc -w -l -c -L OR wc -L -c -w -l
+		vijay
+		pratap singh
+			  2 	3	  19	 12
+
+Scenario 24:- wc should come in the sequence form on standard Scenario
+		wc -c -w  OR wc -w -c
+		vijay
+		pratap singh
+			  3		19
+		wc -l -L OR wc -L -l
+		vijay
+		pratap singh
+			  2 	12 
+		wc -w -l OR wc -l -w
+		vijay
+		pratap singh
+			  2 	3
+		wc -l -c OR wc -c -l 
+		vijay
+		pratap singh
+			  2 	19
+		wc -c -L OR wc -L -c
+		vijay
+		pratap singh
+			 19		12
+		wc -w -L OR wc -L -w
+		vijay
+		pratap singh
+			  3		12
+		wc -w -c -l OR wc -c -w -l OR wc -l -w -c
+		vijay
+		pratap singh
+			  2 	3	  19
+		wc -L -c -l OR wc -c -L -l OR wc -l -c -L 
+		vijay
+		pratap singh
+			  2 	19	   12 
+		wc -w -c -L OR wc -c -w -L OR wc -L -w -c
+		vijay
+		pratap singh
+			  3		19		12 
+
+Scenario 25:- wc should come in form of line, words and then chars on standard Scenario doesn't matter if the same flag given multipul times
+		wc -l -l -c -w -c -L -l -L --chars --words --lines --max-line-length 
+		vijay
+		pratap singh
+			  2		 3		19		12
+		
+Scenario 26:- wc should allow the spaces between two arguments on standard Scenario
+		wc -l    -w       
+		vijay
+		pratap singh
+	         2      3
+		

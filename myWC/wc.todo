@@ -1,0 +1,158 @@
+All the Scenarios is being done on the file one.txt the content of the file is given below.
+		hello, this is a good day.
+		What do you think?
+
+
+Scenario 1:- wc should come in form of line, words and then chars in the file
+		wc.js one.txt
+			2		10		48 one.txt
+
+Scenario 2:- wc should give 2 and filename when the number of lines are 2 in the file
+		wc.js -l one.txt  
+		   2 one.txt
+(-l can be replaced by --lines)
+
+Scenario 3:- wc should give 10 and filename when the number of words are 10 in the file
+		wc.js -w one.txt
+		   10 one.txt
+(-w can be replaced --words)
+
+Scenario 4:- wc should give 48 and filename when the number of chars are 48 in the file
+		wc.js -c one.txt
+		   48 one.txt
+(-c can be replace by --bytes and --chars)
+
+Scenario 5:- wc should give 26 and filename when the length of longest line is 26 in the file 
+		wc.js -L one.txt
+		   26 one.txt
+(-l can be replaced by--max-line-length)
+
+Scenario 6:- wc should come in the form: first come by number of lines, number of words, number of chars and then length of longest line in the file
+		wc.js -w -l -L -c one.txt 
+			2 	10	 48 	26 one.txt 
+
+Scenario 7:- wc should come in the sequence in the file
+		wc.js -c -w one.txt
+			10	   48 one.txt
+		wc -w -c -L one.txt 
+			10		48		26 one.txt
+
+Scenario 8:- wc should take file when it given in the side of wc otherwise it takes filename as a text.
+		wc.js one.txt 
+			2 		10		48 one.txt
+		wc.js
+		one.txt
+			1 		1 		7   
+
+Scenario 9:- wc should be key sensitive.
+		WC.js 
+		vijay 
+		pratap singh
+			2 		3		19
+
+
+
+Scenario 10:- wc should come in a form of line words and then chars on standard Scenario
+ 		wc.js
+		vijay
+		pratap singh
+			  2 	 3		19
+Scenario 11:- wc should give 2 when the number of lines are 2 line on standard Scenario
+		wc.js -l
+		vijay 
+		pratap singh
+		      2
+(-l can be replaced by lines)
+
+Scenario 12:- wc should give 3 when the number of words are 3 on standard Scenario
+		wc.js -w
+		vijay
+		pratap singh
+		      3
+(-w can be replaced by --words)
+
+Scenario 13:- wc should give 19 when the number of chars are 19 on standard Scenario
+		wc.js -c
+		vijay
+		pratap singh
+		     19
+(-c can be replaced by --chars and --bytes)
+
+Scenario 14:- wc should give 12 when the length of longest line is 12 on standard Scenario
+		wc.js -L
+		vijay 
+		pratap singh
+			 12
+(-L can be replace by --max-line-length)
+
+Scenario 15:- wc should come in the form of that first come by number of lines, number of words, number of chars and then length of longest line on standard Scenario
+		wc.js -w -l -L -c 
+		vijay
+		pratap singh
+			  2 	3	  19	 12
+
+Scenario 16:- wc should come in the sequence form on standard Scenario
+		wc.js -c -w
+		vijay
+		pratap singh
+			  3		19
+		wc -w -c -L 
+		vijay
+		pratap singh
+			  3		19		12 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TO DO of Tea
+
+
+1:- Get Scaffold ready 																		time 2 min
+		water, milk, tea, sugar, ginger, utensils(tumbler, filter, cup).                                                 
+2:- put the tumbler on the fire.															time 2 min 
+3:- put the water, sugar, milk, ginger and tea in the tumbler.								time 1 min				
+4:- wait for boiling the tea.																time 5 min
+5:- after boiling take out the tumbler from the fire.										time 1 min
+6:- now filter the tea and put it into the cup  											time 2 min
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+TODO for WC
+
+
+I have to get the scoffold ready 
+	folder, Git bash, subline, runTest, wc, wcTest, module.
+I have to give the text to the wc.js.
+I have to count the number of characters in the test. 
+I have to count the number of words in the file by breaking it line wise and split in the turm of words and then count. 
+I have to count the number of line in the file by breaking it line wise and then count it.
+I have to give the option for the user that what he wants in text number of line or number of characters or number of words.
+I have to find the line that has a most number of characters for this I have to count the words of each line and then compare them to find it.
+I have to arrange the sequence for options(flags)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

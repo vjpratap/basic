@@ -1,0 +1,25 @@
+Get scaffold ready:
+    Editor:
+
+ Get user answer:
+
+
+
+  read line link : 
+    http://nodejs.org/api/readline.html#readline_rl_setprompt_prompt_length
+
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ Make Fizz buzz series @done (14-09-12 10:53) @project(Get scaffold ready)
+ ✔ Integrate the point of the game. @done (14-09-12 10:53) @project(Get scaffold ready)
+ ✔ If the user answer would not match with the fizz buzz series, the exit and show result "You lost", Otherwise keep countinueing the game @done (14-09-12 10:53) @project(Get scaffold ready / Get user answer)
+ ✔ If the series reach to 100 then show result. @done (14-09-12 10:53) @project(Get scaffold ready / Get user answer)
+ ✔ create a Method to check number @done (14-09-11 19:08) @project(Get scaffold ready)
+ ✔ runTest.js @done (14-09-11 18:33) @project(Get scaffold ready / Editor)
+ ✔ fizzbuzzTest.js @done (14-09-11 18:33) @project(Get scaffold ready / Editor)
+ ✔ fizzbuzz @done (14-09-11 18:33) @project(Get scaffold ready / Editor)
+ ✔ Show the instruction and value of fizz Buzz to user @done (14-09-11 18:33) @project(Get scaffold ready)
+ ✔ Main @done (14-09-11 18:33) @project(Get scaffold ready / Editor)
+ ✔ Gitbash @done (14-09-11 18:33) @project(Get scaffold ready)
